@@ -1,0 +1,20 @@
+{
+  "name": "playwright-cucumber-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --config config/cucumber.js",
+    "build": "tsc",
+    "package": "npm run build"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.2.1",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
