@@ -1,0 +1,188 @@
+- generic [ref=e3]:
+  - generic:
+    - banner
+  - generic [ref=e4]:
+    - region "west panel" [ref=e865]:
+      - img "company logo" [ref=e867]
+      - menu [ref=e870]:
+        - generic [ref=e871]:
+          - menuitem "Claims" [expanded] [ref=e872] [cursor=pointer]
+          - generic [ref=e873] [cursor=pointer]: 
+          - menu [ref=e875]:
+            - menuitem "Simple Search" [ref=e877] [cursor=pointer]
+            - menuitem "Advanced Search" [ref=e880] [cursor=pointer]
+        - menuitem "Activities" [ref=e883] [cursor=pointer]
+        - menuitem "Checks" [ref=e885] [cursor=pointer]
+        - menuitem "Recoveries" [ref=e887] [cursor=pointer]
+        - menuitem "Bulk Invoices" [ref=e889] [cursor=pointer]
+      - button "toggle minimize west panel" [ref=e891] [cursor=pointer]:
+        - generic [ref=e892]: 
+      - separator [ref=e893]
+    - main "Search Claims" [ref=e894]:
+      - region "title and toolbar" [ref=e895]:
+        - generic:
+          - generic:
+            - alert
+        - generic [ref=e897]:
+          - navigation [ref=e898]:
+            - menubar [ref=e899]:
+              - generic [ref=e900]:
+                - menuitem "deferred Desktop" [ref=e901] [cursor=pointer]:
+                  - generic "Desktop" [ref=e902]
+                - separator [ref=e904]
+                - generic [ref=e905] [cursor=pointer]: 
+              - generic [ref=e907]:
+                - menuitem "Claim" [ref=e908] [cursor=pointer]
+                - separator [ref=e911]
+                - generic [ref=e912] [cursor=pointer]: 
+                - text: 
+              - generic [ref=e914]:
+                - menuitem "Search" [ref=e915] [cursor=pointer]
+                - separator [ref=e918]
+                - generic [ref=e919] [cursor=pointer]: 
+                - text: 
+              - generic [ref=e921]:
+                - menuitem "Address Book" [ref=e922] [cursor=pointer]
+                - separator [ref=e925]
+                - generic [ref=e926] [cursor=pointer]: 
+              - menuitem "Dashboard" [ref=e929] [cursor=pointer]
+              - menuitem "Team" [ref=e932] [cursor=pointer]
+            - generic [ref=e934]:
+              - generic [ref=e935]:
+                - button "more options" [ref=e936] [cursor=pointer]:
+                  - generic [ref=e937]: 
+                - text: 
+              - button "Unsaved Work" [disabled] [ref=e939]:
+                - generic [ref=e940]: 
+              - generic [ref=e941]:
+                - button "settings" [ref=e942] [cursor=pointer]:
+                  - generic [ref=e943]: 
+                - text:     
+          - textbox "quick jump" [ref=e945]:
+            - /placeholder: Go to (Alt+/)
+        - group [ref=e947]:
+          - heading "Search Claims" [level=1] [ref=e949]
+      - region [ref=e951]:
+        - generic [ref=e952]:
+          - group [ref=e953]:
+            - group [ref=e955]:
+              - generic [ref=e956]:
+                - group [ref=e957]:
+                  - generic [ref=e958]:
+                    - generic [ref=e959]: "Claim #"
+                    - 'textbox "Claim #" [active] [ref=e963]':
+                      - /placeholder: "###-##-######"
+                  - generic [ref=e964]:
+                    - generic [ref=e965]: "Policy #"
+                    - 'textbox "Policy #" [ref=e969]':
+                      - /placeholder: ""
+                - separator [ref=e970]
+                - group [ref=e971]:
+                  - generic [ref=e972]:
+                    - generic [ref=e973]: Search For
+                    - generic [ref=e977]:
+                      - generic: 
+                      - combobox "Search For" [ref=e978] [cursor=pointer]:
+                        - option "<none>"
+                        - option "Additional Insured"
+                        - option "Any Party Involved"
+                        - option "Claimant" [selected]
+                        - option "Insured"
+                  - generic [ref=e979]:
+                    - generic [ref=e980]: First name
+                    - textbox "First name" [ref=e984]
+                  - generic [ref=e985]:
+                    - generic [ref=e986]: Last name
+                    - textbox "Last name" [ref=e990]
+                  - generic [ref=e991]:
+                    - generic [ref=e992]: Organization Name
+                    - textbox "Organization Name" [ref=e996]
+                  - generic [ref=e997]:
+                    - generic [ref=e998]: Tax ID
+                    - textbox "Tax ID" [ref=e1002]:
+                      - /placeholder: ""
+              - group [ref=e1003]:
+                - group [ref=e1006]:
+                  - button "Search" [ref=e1007] [cursor=pointer]
+                  - button "Reset" [ref=e1009] [cursor=pointer]
+          - group [ref=e1011]:
+            - group [ref=e1013]:
+              - generic [ref=e1014]:
+                - generic [ref=e1015]:
+                  - generic [ref=e1016]:
+                    - heading "Search Results" [level=2] [ref=e1017]
+                    - generic [ref=e1018]:
+                      - button "Assign" [disabled] [ref=e1020]
+                      - separator [ref=e1022]
+                      - button "Print/Export" [ref=e1024] [cursor=pointer]
+                  - generic [ref=e1027]:
+                    - button "list view customization menu" [ref=e1028] [cursor=pointer]:
+                      - generic [ref=e1029]: 
+                    - generic: 
+                    - text:                    
+                - group [ref=e1030]:
+                  - table "Search Results" [ref=e1031]:
+                    - rowgroup [ref=e1032]:
+                      - row [ref=e1033]:
+                        - columnheader [ref=e1034]
+                        - columnheader [ref=e1044]:
+                          - button [ref=e1046] [cursor=pointer]:
+                            - generic [ref=e1047]:
+                              - img "flag" [ref=e1049]: 
+                              - generic [ref=e1050]:
+                                - generic: 
+                                - generic: 
+                            - text:   
+                        - columnheader [ref=e1051]:
+                          - button "Claim" [ref=e1053] [cursor=pointer]:
+                            - generic [ref=e1054]:
+                              - generic [ref=e1055]: Claim
+                              - generic [ref=e1056]:
+                                - generic: 
+                                - generic: 
+                            - text:  
+                        - columnheader [ref=e1057]:
+                          - button "Insured" [ref=e1059] [cursor=pointer]:
+                            - generic [ref=e1060]:
+                              - generic [ref=e1061]: Insured
+                              - generic [ref=e1062]:
+                                - generic: 
+                                - generic: 
+                            - text:  
+                        - columnheader [ref=e1063]:
+                          - button "Policy" [ref=e1065] [cursor=pointer]:
+                            - generic [ref=e1066]:
+                              - generic [ref=e1067]: Policy
+                              - generic [ref=e1068]:
+                                - generic: 
+                                - generic: 
+                            - text:  
+                        - columnheader "Claimant" [ref=e1069]
+                        - columnheader [ref=e1074]:
+                          - button "Loss Date" [ref=e1076] [cursor=pointer]:
+                            - generic [ref=e1077]:
+                              - generic [ref=e1078]: Loss Date
+                              - generic [ref=e1079]:
+                                - generic: 
+                                - generic: 
+                            - text:  
+                        - columnheader [ref=e1080]:
+                          - button "Adjuster" [ref=e1082] [cursor=pointer]:
+                            - generic [ref=e1083]:
+                              - generic [ref=e1084]: Adjuster
+                              - generic [ref=e1085]:
+                                - generic: 
+                                - generic: 
+                            - text:  
+                        - columnheader [ref=e1086]:
+                          - button "Status" [ref=e1088] [cursor=pointer]:
+                            - generic [ref=e1089]:
+                              - generic [ref=e1090]: Status
+                              - generic [ref=e1091]:
+                                - generic: 
+                                - generic: 
+                            - text:  
+                        - columnheader "Remaining Reserves" [ref=e1092]
+                        - columnheader "Future Payments" [ref=e1097]
+                        - columnheader "Paid" [ref=e1102]
+                - generic [ref=e1107]: No data to display

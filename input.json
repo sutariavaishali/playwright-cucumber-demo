@@ -1,0 +1,7 @@
+{
+    "baseUrl": "https://cc-sandbox-gwcpdev.tenzing.zeta1-andromeda.guidewire.net/ClaimCenter.do",
+    "username": "su",
+    "password": "gw",
+    "claimNumber": "000-00-002471",
+    "claimNumberDoesNotExist": "000-00-999999"
+}
